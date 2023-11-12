@@ -11,7 +11,7 @@ public class PlayableObject : MonoBehaviour
   public AudioSource audioSource1;
   public AudioSource audioSource2;
   //public TextMeshPro tmp;
-  private float cooldownTime = 0.1f; // Cooldown time in seconds
+  private float cooldownTime = 0.3f; // Cooldown time in seconds
   private float lastCollisionTime = -1; // Time of the last collision
 
   void Start() {
@@ -32,15 +32,11 @@ public class PlayableObject : MonoBehaviour
       //tmp.text = PoseManager.Instance.getPose(isLeft).ToString();
       if (Time.time - lastCollisionTime >= cooldownTime) {
         if (PoseManager.Instance.isFist(isLeft)) {
-          if (!audioSource1.isPlaying) {
             audioSource1.Stop();
             audioSource1.Play();
-          }
         } else if (PoseManager.Instance.isPalm(isLeft)) {
-            if (!audioSource2.isPlaying) {
               audioSource2.Stop();
               audioSource2.Play();
-          }
       }
 
       lastCollisionTime = Time.time;
