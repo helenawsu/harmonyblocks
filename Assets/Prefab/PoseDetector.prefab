@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkBothHands: 0
   chiralityToCheck: 1
-  poseToDetect: {fileID: 11400000, guid: 595abe06d4fcf25458ac3f6f2fbe97f0, type: 2}
+  poseToDetect: {fileID: 11400000, guid: b6c1368c632bb2048858328f035608e9, type: 2}
   posesToDetect: []
   leapProvider: {fileID: 0}
   OnPoseDetected:
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkBothHands: 0
   chiralityToCheck: 0
-  poseToDetect: {fileID: 11400000, guid: a89cae7d6e0cc4e4f896474ce80f2cc4, type: 2}
+  poseToDetect: {fileID: 11400000, guid: 595abe06d4fcf25458ac3f6f2fbe97f0, type: 2}
   posesToDetect: []
   leapProvider: {fileID: 0}
   OnPoseDetected:
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkBothHands: 0
   chiralityToCheck: 0
-  poseToDetect: {fileID: 11400000, guid: 595abe06d4fcf25458ac3f6f2fbe97f0, type: 2}
+  poseToDetect: {fileID: 11400000, guid: b6c1368c632bb2048858328f035608e9, type: 2}
   posesToDetect: []
   leapProvider: {fileID: 0}
   OnPoseDetected:

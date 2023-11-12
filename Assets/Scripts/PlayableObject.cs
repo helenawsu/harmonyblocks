@@ -10,7 +10,7 @@ public class PlayableObject : MonoBehaviour
   // Start is called before the first frame update
   public AudioSource audioSource1;
   public AudioSource audioSource2;
-  public TextMeshPro tmp;
+  //public TextMeshPro tmp;
   private float cooldownTime = 0.1f; // Cooldown time in seconds
   private float lastCollisionTime = -1; // Time of the last collision
 
@@ -21,7 +21,7 @@ public class PlayableObject : MonoBehaviour
   }
 
   private void Update() {
-    tmp.text = PoseManager.Instance.getPose(true).ToString();
+    //tmp.text = PoseManager.Instance.getPose(true).ToString();
   }
 
   void OnTriggerEnter(Collider other) {
@@ -38,7 +38,7 @@ public class PlayableObject : MonoBehaviour
       if (otherObjectName.Contains("Left")) 
         isLeft = true;
 
-      tmp.text = PoseManager.Instance.getPose(isLeft).ToString();
+      //tmp.text = PoseManager.Instance.getPose(isLeft).ToString();
       if (Time.time - lastCollisionTime >= cooldownTime) {
         if (PoseManager.Instance.isFist(isLeft)) {
           if (!audioSource1.isPlaying) {
