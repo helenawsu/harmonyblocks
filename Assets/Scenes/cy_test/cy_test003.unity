@@ -123,18 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!134 &14987815
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &49310697
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,18 +169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 463914042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &50649991
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!134 &66254944
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -646,6 +622,18 @@ MonoBehaviour:
   _joint: 2
   _objectDistance: 3.4028235e+38
   <DisplacementAmount>k__BackingField: 0
+--- !u!134 &198013386
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &207924400
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,18 +978,6 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 0
   bounceCombine: 1
---- !u!134 &233569264
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &244881941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,18 +1025,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anchor: {fileID: 2129453843}
   player: {fileID: 463914037}
---- !u!134 &273515473
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &290336277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1366,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367473769}
-  m_Material: {fileID: 1970237910}
+  m_Material: {fileID: 1924460262}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1418,6 +1382,18 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 5151382180428610131, guid: d7b6ed2b2ff739e4384a989a7dfca693, type: 3}
 --- !u!134 &375628564
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
+--- !u!134 &389190462
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4852,7 +4828,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494869096}
-  m_Material: {fileID: 233569264}
+  m_Material: {fileID: 1118080224}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5078,6 +5054,18 @@ Transform:
   - {fileID: 217433090}
   m_Father: {fileID: 461023104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &570943071
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1001 &570987872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5271,7 +5259,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570987874}
-  m_Material: {fileID: 1908712087}
+  m_Material: {fileID: 570943071}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5459,18 +5447,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!134 &643047648
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &689004047
 GameObject:
   m_ObjectHideFlags: 0
@@ -7044,6 +7020,18 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
+--- !u!134 &922598036
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &929646170
 GameObject:
   m_ObjectHideFlags: 0
@@ -8158,6 +8146,18 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
+--- !u!134 &1118080224
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1152218872
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,7 +8732,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178964628}
-  m_Material: {fileID: 643047648}
+  m_Material: {fileID: 1287698728}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9127,6 +9127,18 @@ Transform:
   - {fileID: 1579406071}
   m_Father: {fileID: 461023104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &1287698728
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1312042430
 GameObject:
   m_ObjectHideFlags: 0
@@ -10388,7 +10400,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624757465}
-  m_Material: {fileID: 14987815}
+  m_Material: {fileID: 922598036}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11035,7 +11047,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720042963}
-  m_Material: {fileID: 50649991}
+  m_Material: {fileID: 389190462}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13419,7 +13431,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!134 &1908712087
+--- !u!134 &1924460262
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13677,18 +13689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityGlideFriction: 1.5
   angularGlideFriction: 1
---- !u!134 &1970237910
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1999405928
 GameObject:
   m_ObjectHideFlags: 0
@@ -13928,7 +13928,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022706030}
-  m_Material: {fileID: 273515473}
+  m_Material: {fileID: 198013386}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -14259,7 +14259,7 @@ Transform:
   m_GameObject: {fileID: 2129453843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -0.813}
+  m_LocalPosition: {x: 0.276, y: 1.03, z: -0.768}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
