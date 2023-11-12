@@ -16,14 +16,17 @@ EditorBuildSettings:
     path: Assets/Scenes/ZoeScene.unity
     guid: 5c73905b8dfa44f809dea01c696b70e7
   - enabled: 0
-    path: Assets/Scenes/cy_test002.unity
+    path: Assets/Scenes/cy_test/cy_test002.unity
     guid: d7fe5d5dfe144674ea5bb85bf4595164
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/zoe_build_scene.unity
     guid: a3fdfd90265a94b9eb521b2324d5cc9a
   - enabled: 0
     path: Assets/Scenes/helena.unity
     guid: 7987e1c9493984a0eacc7d3d0a7523fd
+  - enabled: 1
+    path: Assets/Scenes/_main.unity
+    guid: f8d8978078cb0491fa743f32b1ad5599
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1b37d77eac6046ce874afcaeeb9fcde, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 97e55fc25a6ba4bef81d949e5277e8a2, type: 2}
