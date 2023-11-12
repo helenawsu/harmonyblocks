@@ -11,7 +11,7 @@ public class PlayableObject : MonoBehaviour
   public AudioSource audioSource1;
   public AudioSource audioSource2;
   //public TextMeshPro tmp;
-  private float cooldownTime = 0.3f; // Cooldown time in seconds
+  private float cooldownTime = 0.5f; // Cooldown time in seconds
   private float lastCollisionTime = -1; // Time of the last collision
 
   void Start() {
