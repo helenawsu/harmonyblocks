@@ -11,13 +11,17 @@ public class PlayableObject : MonoBehaviour
   public AudioSource audioSource1;
   public AudioSource audioSource2;
   public TextMeshPro tmp;
-  public float cooldownTime = 0.3f; // Cooldown time in seconds
-  private float lastCollisionTime = -1f; // Time of the last collision
+  private float cooldownTime = 0.1f; // Cooldown time in seconds
+  private float lastCollisionTime = -1; // Time of the last collision
 
   void Start() {
     // Get the AudioSource component
     //audioSource1 = GetComponent<AudioSource>();
     //audioSource2 = GetComponent<AudioSource>();
+  }
+
+  private void Update() {
+    tmp.text = PoseManager.Instance.getPose(true).ToString();
   }
 
   void OnTriggerEnter(Collider other) {
@@ -29,20 +33,26 @@ public class PlayableObject : MonoBehaviour
    void OnCollisionEnter(Collision collision) {
    
       string otherObjectName = collision.gameObject.name;
+      bool isLeft = false;
 
-      tmp.text = otherObjectName;
+      if (otherObjectName.Contains("Left")) 
+        isLeft = true;
 
-    if (Time.time - lastCollisionTime >= cooldownTime) {
-      if (otherObjectName.Contains("Joint 2") || otherObjectName.Contains("Joint 1")) {
-        if (!audioSource2.isPlaying) { 
-          audioSource1.Play();
-        }
-      } else {
-        if (!audioSource1.isPlaying) { 
-          audioSource2.Play();
-        }
+      tmp.text = PoseManager.Instance.getPose(isLeft).ToString();
+      if (Time.time - lastCollisionTime >= cooldownTime) {
+        if (PoseManager.Instance.isFist(isLeft)) {
+          if (!audioSource1.isPlaying) {
+            audioSource1.Play();
+          }
+        } else if (PoseManager.Instance.isPalm(isLeft)) {
+            if (!audioSource2.isPlaying) {
+              audioSource2.Play();
+          }
       }
+
+      lastCollisionTime = Time.time;
     }
+    
       // Now you can use otherObjectName as needed
       Debug.Log("Collided with: " + otherObjectName);
   }
