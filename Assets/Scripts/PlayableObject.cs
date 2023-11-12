@@ -15,18 +15,9 @@ public class PlayableObject : MonoBehaviour
   private float lastCollisionTime = -1; // Time of the last collision
 
   void Start() {
-    // Get the AudioSource component
-    //audioSource1 = GetComponent<AudioSource>();
-    //audioSource2 = GetComponent<AudioSource>();
-  }
-
-  private void Update() {
-    //tmp.text = PoseManager.Instance.getPose(true).ToString();
   }
 
   void OnTriggerEnter(Collider other) {
-    // Play the sound when another object enters the trigger
-      //audioSource.Play();
   }
 
   //Optional: Use OnCollisionEnter for physical collisions
@@ -42,10 +33,12 @@ public class PlayableObject : MonoBehaviour
       if (Time.time - lastCollisionTime >= cooldownTime) {
         if (PoseManager.Instance.isFist(isLeft)) {
           if (!audioSource1.isPlaying) {
+            audioSource1.Stop();
             audioSource1.Play();
           }
         } else if (PoseManager.Instance.isPalm(isLeft)) {
             if (!audioSource2.isPlaying) {
+              audioSource2.Stop();
               audioSource2.Play();
           }
       }

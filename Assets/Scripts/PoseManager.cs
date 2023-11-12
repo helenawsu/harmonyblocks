@@ -23,7 +23,7 @@ public class PoseManager : MonoBehaviour
   }
 
   public bool isPalm(bool isLeft) {
-    if (isLeft) { return leftPose == 0; } else { return rightPose == 0; }
+    if (isLeft) { return leftPose == -1; } else { return rightPose == -1; }
 
   }
 
